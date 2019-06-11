@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Java script
+            </title>
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <style>
+body{
+                    margin:0;
+                    padding:0;
+					font-family:sans-serif;
+                    background:url('nathan-dumlao-1555018-unsplash.jpg');
+					background-size:cover;
+					opacity:0.7;
+                }
+                h1{
+                    color:white;
+                }
+                .box{
+                    margin:0;
+                    padding:0;
+                    width:380px;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    background:#191919;
+                    text-align: center; 
+                    color:white;
+                                       
+                }
+                .box input[type = "text"], .box input[type = "password"] {
+                   border:0;
+                   outline:none;
+                   display:block;
+                   margin:20px auto;
+                   padding:10px;
+                   text-align: center;
+                    color:bisque;
+                    background:none;
+                    border:2px solid #ff33cc;
+                    border-radius:20px;
+               }
+               .box input[type="button"]{
+                    background:none;
+                    border:2px solid #ff33cc;
+                    border-radius:20px;
+                    color:white;
+                    margin: 2px;
+                    padding:5px;
+                    width:20%;
+                    outline:none;
+
+
+               }
+               .box input[type = "text"]:hover,.box input[type = "password"]:hover{
+
+                    width:280px;
+                    border-color:red;
+}
+
+
+                </style>
+
+        </head>
+
+            <body>
+			<script src="js/bootstrap.min.js">	</script>
+			<script src="js/jquery.js">  </script>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a href="project.html" class="navbar-brand"><i class="glyphicon glyphicon-certificate"></i>  BMS</a>
+					</div>
+					<div id="mynav" class="collapse navbar-collapse" > 
+					<ul class="nav navbar-nav">
+						
+						<li><a href="home.html"><i class="glyphicon glyphicon-home"></i> HOME</a></li>
+						
+						<li><a href="aboutus.html"><i class="glyphicon glyphicon-folder-open"></i>   ABOUT US</a></li>
+						<li><a href="contactus.html"><i class="glyphicon glyphicon-flag"></i>  CONTACT US</a></li>
+						<li><a href="login.html"><i class="glyphicon glyphicon-log-in"></i> LOGIN</a></li>
+						<li><a href="signup.html"><i class="glyphicon glyphicon-user"></i>  SIGN UP</a></li>
+						</ul>
+						</div>
+				</div>
+			</nav>
+
+              
+                <form class="box" action="mypractice.html" method="post">
+                        <h1>LOGIN</h1>
+                        
+              <input type="text" name="username" placeholder="Username">
+              <input type="password" name="password" placeholder="Password">
+              <input type="button" value="Login"/>
+              
+                    </form>
+            </body>
+
+    </html>

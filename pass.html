@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+var key='abcdefghijklmnopqrstuvwxyd1234567890!@#$%^&*ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var temp=''
+function passgenerator(passLength){
+
+				temp=''
+					for(i=0;i<passLength;i++){
+						temp += key.charAt(Math.floor(Math.random()*key.length))
+					
+					}
+					return temp;
+				}
+				function formpopulate(lengthEntered){
+				
+					document.pass.out.value= passgenerator(lengthEntered);
+				
+				}
+</script>
+<body>
+		<div class="container">
+			<form action="" name="passGen">
+				<div class="row">
+					<input type="text" name="output" size="18" class="col-xs-12 in">
+					<input type="button" value="Generate Password" onclick="formpopulate(this.form.length.value)" class="btn btn-primary col-xs-12 gen">
+				</div><br>
+				<div class="row">
+					<strong class="text col-xs-10">Password Length</strong><input type="text" name="length" size="3" value="7" class="len col-xs-2">
+			</form>
+		</div>
+</body>
+<html>
